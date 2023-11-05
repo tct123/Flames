@@ -1,43 +1,42 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=4 format=3 uid="uid://bebrewrcpegti"]
 
-[ext_resource path="res://assets/logo.png" type="Texture" id=2]
-[ext_resource path="res://assets/Creator.png" type="Texture" id=3]
-[ext_resource path="res://scripts/bootsplash.gd" type="Script" id=4]
+[ext_resource type="Texture2D" uid="uid://bmx1y6hqpco3c" path="res://assets/logo.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://c64e1xvwuerlq" path="res://assets/Creator.png" id="3"]
+[ext_resource type="Script" path="res://scripts/bootsplash.gd" id="4"]
 
 [node name="Bootsplash" type="Control"]
+layout_mode = 3
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-script = ExtResource( 4 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+script = ExtResource("4")
 
 [node name="Logo" type="TextureRect" parent="."]
+layout_mode = 0
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -112.0
-margin_top = -143.5
-margin_right = 112.0
-margin_bottom = 143.5
-texture = ExtResource( 2 )
+offset_left = -112.0
+offset_top = -143.5
+offset_right = 112.0
+offset_bottom = 143.5
+texture = ExtResource("2")
 
 [node name="MadeBy" type="TextureRect" parent="."]
+layout_mode = 0
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -77.0
-margin_top = -131.0
-margin_right = 77.0
-texture = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+offset_left = -77.0
+offset_top = -131.0
+offset_right = 77.0
+texture = ExtResource("3")
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 3.0
 one_shot = true
 autostart = true
+
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

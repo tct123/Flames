@@ -43,19 +43,19 @@ func pulse(object, end, alt_end):
 	var alt_objects = ["PlayPause", "Check"]
 	
 	if object.name in alt_objects:
-		$ButtonAnimation.interpolate_property(object, "rect_scale", object.rect_scale, alt_end, 0.03, Tween.TRANS_CUBIC, Tween.EASE_IN_OUT)
+		$ButtonAnimation.interpolate_property(object, "scale", object.scale, alt_end, 0.03, Tween.TRANS_CUBIC, Tween.EASE_IN_OUT)
 		$ButtonAnimation.start()
 	
 	else:
-		$ButtonAnimation.interpolate_property(object, "rect_scale", object.rect_scale, end, 0.03, Tween.TRANS_CUBIC, Tween.EASE_IN_OUT)
+		$ButtonAnimation.interpolate_property(object, "scale", object.scale, end, 0.03, Tween.TRANS_CUBIC, Tween.EASE_IN_OUT)
 		$ButtonAnimation.start()
 	
 func button_pressed(button):
 	pulse(button, Vector2(1.3, 1.3), Vector2(1.03, 1.03))
 	
 func center_pivot(c_node):
-	c_node.rect_pivot_offset.x = c_node.rect_size.x / 2
-	c_node.rect_pivot_offset.y = c_node.rect_size.y / 2
+	c_node.pivot_offset.x = c_node.size.x / 2
+	c_node.pivot_offset.y = c_node.size.y / 2
 	
 func load_bar():
 	$Player/Elements/Progress/Bar/Tween.interpolate_property($Player/Elements/Progress/Bar, "value", $Player/Elements/Progress/Bar.value, $Player/Elements/Progress/Bar.max_value, $Player/Music.stream.get_length(), Tween.TRANS_LINEAR,Tween.EASE_IN_OUT)
@@ -189,8 +189,8 @@ func change_title(isCustom, num, text):
 
 func slide_object(node, object, stop):
 	#Interpolation of the position
-	node.interpolate_property(object, "rect_position",
-		Vector2(object.rect_position.x, object.rect_position.y), stop, 1,
+	node.interpolate_property(object, "position",
+		Vector2(object.position.x, object.position.y), stop, 1,
 		Tween.TRANS_CUBIC, Tween.EASE_IN_OUT)
 		
 	node.start()
@@ -248,19 +248,19 @@ func move_point(custom:bool, num):
 func _ready():
 	for button in get_tree().get_nodes_in_group("Buttons"):
 		center_pivot(button)
-		button.connect("pressed", self, "button_pressed", [button])
+		button.connect("pressed", Callable(self, "button_pressed").bind(button))
 	
 	randomize()
 	
 	#Gets the initial position of the input window
-	initialInputPosition = $Input.rect_position
+	initialInputPosition = $Input.position
 	#---------------------------------------------
 	
 	#Gets the initial position of the input window
-	initialPlayerPosition = $Player.rect_position
+	initialPlayerPosition = $Player.position
 	#---------------------------------------------
 	
-	slide_object($Player/Elements/Progress/Bar/Tween, $Player, Vector2($Player.rect_position.x, 3000))
+	slide_object($Player/Elements/Progress/Bar/Tween, $Player, Vector2($Player.position.x, 3000))
 	
 	change_track("next", true)
 	
@@ -275,7 +275,7 @@ func _on_ChangeTitle_timeout():
 	#-------------
 	
 func _on_OutputAnimation_animation_finished(anim_name):
-	if $Output.rect_position == Vector2.ZERO:
+	if $Output.position == Vector2.ZERO:
 		#Change title without any customisation
 		if anim_name == "FadeOut":
 			change_title(false, null, "")
@@ -307,9 +307,9 @@ func _on_OutputAnimation_animation_finished(anim_name):
 				#------------------------
 			
 func _on_Input_Tween_tween_completed(object, key):
-	if $Input.rect_position == Vector2(20, 3000):
+	if $Input.position == Vector2(20, 3000):
 		#Slides the output node down
-		slide_object($Output/Tween, $Output, Vector2(0, (1920/2) - ($Output.rect_size.y/2)))
+		slide_object($Output/Tween, $Output, Vector2(0, (1920/2) - ($Output.size.y/2)))
 		#---------------------------
 		
 	else:
@@ -318,7 +318,7 @@ func _on_Input_Tween_tween_completed(object, key):
 		#-----------
 
 func _on_Output_Tween_tween_completed(object, key):
-	if $Output.rect_position == Vector2.ZERO:
+	if $Output.position == Vector2.ZERO:
 		#Slides the input node down
 		slide_object($Input/Tween, $Input, initialInputPosition)
 		#--------------------------
@@ -360,7 +360,7 @@ func _on_Player_pressed():
 	slide_object($Player/Elements/Progress/Bar/Tween, $Player, initialPlayerPosition)
 	
 func _on_Flames_pressed():
-	slide_object($Player/Elements/Progress/Bar/Tween, $Player, Vector2($Player.rect_position.x, 3000))
+	slide_object($Player/Elements/Progress/Bar/Tween, $Player, Vector2($Player.position.x, 3000))
 	
 func _on_Previous_pressed():
 	change_track("previous", $Player/Elements/Buttons/Shuffle.pressed)
@@ -378,7 +378,7 @@ func _on_Next_pressed():
 	change_track("next", $Player/Elements/Buttons/Shuffle.pressed)
 
 func _on_Music_finished():
-	if $Player/Elements/Buttons/PlayPause.pressed == false:
+	if $Player/Elements/Buttons/PlayPause.button_pressed == false:
 		if $Player/Elements/Buttons/Loop.pressed:
 			$Player/Music.playing = true
 			load_bar()
@@ -387,5 +387,5 @@ func _on_Music_finished():
 			change_track("next", $Player/Elements/Buttons/Shuffle.pressed)
 
 func _on_ButtonAnimation_tween_completed(object, key):
-	if object.rect_scale != Vector2.ONE:
+	if object.scale != Vector2.ONE:
 		pulse(object, Vector2.ONE, Vector2.ONE)

@@ -3,7 +3,7 @@ extends TextureRect
 signal update
 
 #Showing in editor
-export var isActive = false
+@export var isActive = false
 #-----------------
 
 var previousState = false

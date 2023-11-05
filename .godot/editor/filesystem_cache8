@@ -1,0 +1,95 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1699172975
+default_env.tres::Environment::-1::1699172951::0::1::::<><>::
+export_presets.cfg::TextFile::-1::1699172874::0::1::::<><>::
+icon.png::CompressedTexture2D::8132476824166991749::1699172874::1699172978::1::::<><>::
+README.md::TextFile::-1::1699172874::0::1::::<><>::
+::res://assets/::1699172874
+album_art.png::CompressedTexture2D::7146729216036166925::1699172874::1699172978::1::::<><>::
+background.png::CompressedTexture2D::380606341670620997::1699172874::1699172978::1::::<><>::
+back_button.png::CompressedTexture2D::6970342787289830794::1699172874::1699172978::1::::<><>::
+bootsplash.png::CompressedTexture2D::509565235246850495::1699172874::1699172979::1::::<><>::
+check_button.png::CompressedTexture2D::1395193559616887812::1699172874::1699172978::1::::<><>::
+Creator.png::CompressedTexture2D::7008853015149962026::1699172874::1699172978::1::::<><>::
+flames_button.png::CompressedTexture2D::7900388506825427424::1699172874::1699172978::1::::<><>::
+grabber.png::CompressedTexture2D::2724299720878727458::1699172874::1699172978::1::::<><>::
+input_background.png::CompressedTexture2D::3036056016953762037::1699172874::1699172979::1::::<><>::
+input_background_shadow.png::CompressedTexture2D::8211980821307068820::1699172874::1699172979::1::::<><>::
+line.png::CompressedTexture2D::1230082492172788373::1699172874::1699172979::1::::<><>::
+logo.png::CompressedTexture2D::3277790636343103026::1699172874::1699172978::1::::<><>::
+player_background.png::CompressedTexture2D::2338230941641722911::1699172874::1699172978::1::::<><>::
+player_background_shadow.png::CompressedTexture2D::1638786892729193022::1699172874::1699172979::1::::<><>::
+player_button.png::CompressedTexture2D::7340577379747510741::1699172874::1699172978::1::::<><>::
+playing_track_bar.png::CompressedTexture2D::8194403718195735134::1699172874::1699172978::1::::<><>::
+position_point.png::CompressedTexture2D::7347355143763505099::1699172874::1699172978::1::::<><>::
+track_bar.png::CompressedTexture2D::3846421823019796684::1699172874::1699172978::1::::<><>::
+::res://assets/icons/::1699172874
+android.png::CompressedTexture2D::6125516895516563803::1699172874::1699172978::1::::<><>::
+project.png::CompressedTexture2D::5936175469438364962::1699172874::1699172978::1::::<><>::
+::res://assets/player/::1699172874
+Album Art.png::CompressedTexture2D::5837239453484206512::1699172874::1699172978::1::::<><>::
+shadow.png::CompressedTexture2D::2417643275764625772::1699172874::1699172978::1::::<><>::
+::res://assets/player/buttons/::1699172874
+next.png::CompressedTexture2D::8330112679890064359::1699172874::1699172978::1::::<><>::
+pause.png::CompressedTexture2D::4276741337922490852::1699172874::1699172978::1::::<><>::
+play.png::CompressedTexture2D::1735373603135087770::1699172874::1699172978::1::::<><>::
+previous.png::CompressedTexture2D::5860590602527957255::1699172874::1699172978::1::::<><>::
+repeat_off.png::CompressedTexture2D::2087736804942262085::1699172874::1699172978::1::::<><>::
+repeat_one.png::CompressedTexture2D::164520474075625092::1699172874::1699172978::1::::<><>::
+shuffle_off.png::CompressedTexture2D::616110867554077898::1699172874::1699172978::1::::<><>::
+shuffle_on.png::CompressedTexture2D::3000359424178333761::1699172874::1699172978::1::::<><>::
+::res://assets/progress_bar/::1699172874
+over.png::CompressedTexture2D::5272878736340639008::1699172874::1699172978::1::::<><>::
+progress.png::CompressedTexture2D::4231083495748705160::1699172874::1699172978::1::::<><>::
+under.png::CompressedTexture2D::1280665769830662397::1699172874::1699172978::1::::<><>::
+::res://assets/title_images/::1699172874
+admirers.png::CompressedTexture2D::594097575110700457::1699172874::1699172978::1::::<><>::
+enemies.png::CompressedTexture2D::1025288155294680507::1699172874::1699172978::1::::<><>::
+friends.png::CompressedTexture2D::4474637913740049201::1699172874::1699172978::1::::<><>::
+lovers.png::CompressedTexture2D::8588350762197367995::1699172874::1699172978::1::::<><>::
+married.png::CompressedTexture2D::1242939427093934478::1699172874::1699172978::1::::<><>::
+secret_admirers.png::CompressedTexture2D::1071090320004325055::1699172874::1699172978::1::::<><>::
+::res://audio/::1699172874
+Keys - Constellations.ogg::AudioStreamOggVorbis::2806279708846502855::1699172874::1699172978::1::::<><>::
+Oceanus - Caffeine.ogg::AudioStreamOggVorbis::1153842168592977114::1699172874::1699172978::1::::<><>::
+SoLush - Waiting.ogg::AudioStreamOggVorbis::2415462224088086935::1699172874::1699172978::1::::<><>::
+Vadium - 3am In The Morning.ogg::AudioStreamOggVorbis::3940407221975642629::1699172874::1699172978::1::::<><>::
+Vadium - PAIN!.ogg::AudioStreamOggVorbis::5699771013819095404::1699172874::1699172978::1::::<><>::
+Y - MY PRESENCE.ogg::AudioStreamOggVorbis::1160769951350978914::1699172874::1699172978::1::::<><>::
+::res://fonts/::1699172874
+::res://fonts/Poppins/::1699172874
+OFL.txt::TextFile::-1::1699172874::0::1::::<><>::
+Poppins-Black.ttf::FontFile::5625000432356951851::1699172874::1699172977::1::::<><>::
+Poppins-BlackItalic.ttf::FontFile::4625949279441504306::1699172874::1699172977::1::::<><>::
+Poppins-Bold.ttf::FontFile::1248932080449014185::1699172874::1699172977::1::::<><>::
+Poppins-BoldItalic.ttf::FontFile::4457563462529349082::1699172874::1699172977::1::::<><>::
+Poppins-ExtraBold.ttf::FontFile::8737380225526769605::1699172874::1699172977::1::::<><>::
+Poppins-ExtraBoldItalic.ttf::FontFile::2685198365082181552::1699172874::1699172977::1::::<><>::
+Poppins-ExtraLight.ttf::FontFile::3430230369300195186::1699172874::1699172977::1::::<><>::
+Poppins-ExtraLightItalic.ttf::FontFile::4193154494107125792::1699172874::1699172977::1::::<><>::
+Poppins-Italic.ttf::FontFile::6750038972526791572::1699172874::1699172977::1::::<><>::
+Poppins-Light.ttf::FontFile::2156073874388551597::1699172874::1699172977::1::::<><>::
+Poppins-LightItalic.ttf::FontFile::2665293091329589200::1699172874::1699172977::1::::<><>::
+Poppins-Medium.ttf::FontFile::2428961320693322759::1699172874::1699172977::1::::<><>::
+Poppins-MediumItalic.ttf::FontFile::3889720609186534392::1699172874::1699172977::1::::<><>::
+Poppins-Regular.ttf::FontFile::7323253751825963776::1699172874::1699172977::1::::<><>::
+Poppins-SemiBold.ttf::FontFile::6984319814828718791::1699172874::1699172977::1::::<><>::
+Poppins-SemiBoldItalic.ttf::FontFile::2265533845959817614::1699172874::1699172977::1::::<><>::
+Poppins-Thin.ttf::FontFile::889582626732773292::1699172874::1699172977::1::::<><>::
+Poppins-ThinItalic.ttf::FontFile::2598704378404227777::1699172874::1699172977::1::::<><>::
+::res://resources/::1699172874
+list_grabber.tres::StyleBoxFlat::-1::1699172951::0::1::::<><>::
+regular_label.tres::FontFile::-1::1699172951::0::1::::<><>::res://fonts/Poppins/Poppins-Regular.ttf
+sub_label.tres::FontFile::-1::1699172951::0::1::::<><>::res://fonts/Poppins/Poppins-Regular.ttf
+::res://scenes/::1699172874
+bootsplash.tscn::PackedScene::-1::1699172951::0::1::::<><>::res://assets/logo.png<>res://assets/Creator.png<>res://scripts/bootsplash.gd
+border.tscn::PackedScene::-1::1699172951::0::1::::<><>::res://assets/line.png
+game.tscn::PackedScene::-1::1699172951::0::1::::<><>::res://assets/input_background.png<>res://assets/input_background_shadow.png<>res://assets/title_images/friends.png<>res://fonts/Poppins/Poppins-Medium.ttf<>res://assets/player_background.png<>res://scripts/game.gd<>res://scenes/position_point.tscn<>res://assets/player_background_shadow.png<>res://assets/check_button.png<>res://assets/back_button.png<>res://scenes/name.tscn<>res://assets/player_button.png<>res://assets/player/Album Art.png<>res://resources/sub_label.tres<>res://resources/regular_label.tres<>res://assets/player/buttons/shuffle_off.png<>res://assets/player/buttons/previous.png<>res://assets/player/buttons/shuffle_on.png<>res://assets/player/buttons/repeat_off.png<>res://assets/progress_bar/under.png<>res://assets/flames_button.png<>res://assets/progress_bar/progress.png<>res://assets/player/buttons/play.png<>res://assets/player/buttons/next.png<>res://assets/player/buttons/repeat_one.png<>res://resources/list_grabber.tres<>res://assets/player/buttons/pause.png<>res://assets/playing_track_bar.png<>res://assets/track_bar.png<>res://fonts/Poppins/Poppins-Regular.ttf
+name.tscn::PackedScene::-1::1699172951::0::1::::<><>::res://assets/line.png<>res://fonts/Poppins/Poppins-Regular.ttf<>res://scripts/name.gd
+position_point.tscn::PackedScene::-1::1699172951::0::1::::<><>::res://assets/position_point.png<>res://scripts/position_point.gd
+track.tscn::PackedScene::-1::1699172951::0::1::::<><>::res://resources/sub_label.tres<>res://assets/album_art.png<>res://resources/regular_label.tres
+::res://scripts/::1699172874
+bootsplash.gd::GDScript::-1::1699172951::0::1::::<>Control<>::
+game.gd::GDScript::-1::1699172951::0::1::::<>Control<>::
+name.gd::GDScript::-1::1699172951::0::1::::<>LineEdit<>::
+position_point.gd::GDScript::-1::1699172951::0::1::::<>TextureRect<>::

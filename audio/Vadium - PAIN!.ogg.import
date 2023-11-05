@@ -1,15 +1,19 @@
 [remap]
 
-importer="ogg_vorbis"
-type="AudioStreamOGGVorbis"
-path="res://.import/Vadium - PAIN!.ogg-d938f40570f1160c1a4f580a8fa10fc6.oggstr"
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cnhanpurpm1xg"
+path="res://.godot/imported/Vadium - PAIN!.ogg-d938f40570f1160c1a4f580a8fa10fc6.oggvorbisstr"
 
 [deps]
 
 source_file="res://audio/Vadium - PAIN!.ogg"
-dest_files=[ "res://.import/Vadium - PAIN!.ogg-d938f40570f1160c1a4f580a8fa10fc6.oggstr" ]
+dest_files=["res://.godot/imported/Vadium - PAIN!.ogg-d938f40570f1160c1a4f580a8fa10fc6.oggvorbisstr"]
 
 [params]
 
 loop=false
 loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
